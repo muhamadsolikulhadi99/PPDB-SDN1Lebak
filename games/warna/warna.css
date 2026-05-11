@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   margin:0;
   padding:0;
@@ -200,4 +201,208 @@ h2{
     height:90px;
   }
 
+=======
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+  font-family:'Comic Sans MS', cursive;
+}
+
+body{
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+  linear-gradient(
+    135deg,
+    #74ebd5,
+    #ACB6E5
+  );
+
+  padding:20px;
+}
+
+.game-box{
+  width:100%;
+  max-width:950px;
+
+  background:white;
+
+  padding:40px 25px;
+
+  border-radius:35px;
+
+  text-align:center;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+  font-size:48px;
+
+  color:#ff4081;
+
+  margin-bottom:20px;
+}
+
+#pertanyaan{
+  font-size:32px;
+
+  color:#333;
+
+  margin-bottom:20px;
+}
+
+h2{
+  margin-bottom:30px;
+
+  color:#0077ff;
+}
+
+#score{
+  color:#ff9800;
+}
+
+/* GRID WARNA */
+
+.warna-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:20px;
+
+  margin-top:20px;
+}
+
+.warna{
+  height:120px;
+
+  border-radius:25px;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  border:5px solid white;
+
+  box-shadow:
+  0 5px 15px rgba(0,0,0,0.2);
+}
+
+.warna:hover{
+  transform:scale(1.08);
+}
+
+/* WARNA */
+
+.merah{
+  background:#ff1744;
+}
+
+.biru{
+  background:#2979ff;
+}
+
+.hijau{
+  background:#00c853;
+}
+
+.kuning{
+  background:#ffd600;
+}
+
+.ungu{
+  background:#9c27b0;
+}
+
+.orange{
+  background:#ff6d00;
+}
+
+.pink{
+  background:#ff1493;
+}
+
+.coklat{
+  background:#8d5524;
+}
+
+.hitam{
+  background:#212121;
+}
+
+.putih{
+  background:#ffffff;
+  border:5px solid #ddd;
+}
+
+.abu{
+  background:#9e9e9e;
+}
+
+.laut{
+  background:#00bcd4;
+}
+
+/* BUTTON */
+
+.btn-home{
+  display:inline-block;
+
+  margin-top:35px;
+
+  padding:15px 30px;
+
+  background:#ff9800;
+
+  color:white;
+
+  text-decoration:none;
+
+  border-radius:40px;
+
+  font-size:22px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+
+  box-shadow:
+  0 0 15px rgba(255,152,0,0.7);
+}
+
+.btn-home:hover{
+  transform:scale(1.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .warna-container{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+  h1{
+    font-size:34px;
+  }
+
+  #pertanyaan{
+    font-size:24px;
+  }
+
+  .warna{
+    height:90px;
+  }
+
+>>>>>>> 308872333275f77c03aad154043451933debc45e
 }
