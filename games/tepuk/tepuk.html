@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Tepuk Semangat Anak</title>
+
+  <link
+    rel="icon"
+    href="../../assets/img/logo.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="tepuk.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- CONTAINER -->
+
+  <div class="container">
+
+    <h1>
+      👏 Tepuk Semangat Anak
+    </h1>
+
+    <p>
+      Klik tombol di bawah untuk
+      mendengar tepuk semangat!
+    </p>
+
+    <!-- CHARACTER -->
+
+    <div class="maskot">
+      🧒
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="btn-group">
+
+      <button
+        class="tepuk-btn semangat"
+        onclick="playTepuk('semangat')"
+      >
+        👏 Tepuk Semangat
+      </button>
+
+      <button
+        class="tepuk-btn pintar"
+        onclick="playTepuk('pintar')"
+      >
+        🎓 Tepuk Pintar
+      </button>
+
+      <button
+        class="tepuk-btn hebat"
+        onclick="playTepuk('hebat')"
+      >
+        ⭐ Tepuk Hebat
+      </button>
+
+      <button
+        class="tepuk-btn islam"
+        onclick="playTepuk('islam')"
+      >
+        🕌 Tepuk Islami
+      </button>
+
+    </div>
+
+    <!-- TEXT -->
+
+    <div id="hasil">
+      Ayo pilih tepukannya 😊
+    </div>
+
+    <!-- BACK -->
+
+    <a
+      href="../../index.html"
+      class="back-btn"
+    >
+      ⬅ Kembali
+    </a>
+
+  </div>
+
+  <!-- AUDIO -->
+
+  <audio id="semangatAudio">
+    <source
+      src="../../assets/audio/tepuk-semangat.mp3"
+      type="audio/mp3"
+    >
+  </audio>
+
+  <audio id="pintarAudio">
+    <source
+      src="../../assets/audio/tepuk-pintar.mp3"
+      type="audio/mp3"
+    >
+  </audio>
+
+  <audio id="hebatAudio">
+    <source
+      src="../../assets/audio/tepuk-hebat.mp3"
+      type="audio/mp3"
+    >
+  </audio>
+
+  <audio id="islamAudio">
+    <source
+      src="../../assets/audio/tepuk-islam.mp3"
+      type="audio/mp3"
+    >
+  </audio>
+
+  <script src="tepuk.js"></script>
+
+</body>
+</html>
