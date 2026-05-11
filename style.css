@@ -1,0 +1,708 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f4f9ff;
+  color:#333;
+  overflow-x:hidden;
+  transition:0.4s;
+  opacity:0;
+}
+
+body.loaded{
+  opacity:1;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#4facfe;
+  border-radius:20px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:15px 30px;
+
+  background:rgba(255,255,255,0.92);
+
+  backdrop-filter:blur(10px);
+
+  z-index:1000;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  font-size:24px;
+  font-weight:700;
+  color:#0077ff;
+}
+
+.logo img{
+  border-radius:50%;
+}
+
+.menu{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#0077ff;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  background:
+  linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2,
+    #00c6ff
+  );
+
+  color:white;
+  text-align:center;
+
+  padding:190px 20px 130px;
+
+  position:relative;
+  overflow:hidden;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:20px;
+  line-height:1.3;
+
+  animation:textFloat 3s ease-in-out infinite;
+}
+
+.hero p{
+  font-size:24px;
+  margin-bottom:35px;
+}
+
+@keyframes textFloat{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn,
+button,
+.music-btn,
+.dark-btn,
+.wa{
+
+  box-shadow:
+  0 0 10px rgba(255,255,255,0.5),
+  0 0 20px rgba(0,119,255,0.5);
+
+}
+
+.btn{
+  background:white;
+  color:#0077ff;
+
+  padding:15px 35px;
+
+  border-radius:40px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  transition:0.3s;
+
+  display:inline-block;
+}
+
+.btn:hover,
+button:hover,
+.music-btn:hover,
+.dark-btn:hover,
+.wa:hover,
+.btn-daftar:hover{
+
+  transform:scale(1.05);
+
+  box-shadow:
+  0 0 20px rgba(255,255,255,0.8),
+  0 0 40px rgba(0,119,255,0.8);
+
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section{
+  padding:80px 20px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:40px;
+  color:#0077ff;
+  font-size:38px;
+}
+
+/* =========================
+   STATISTIK
+========================= */
+
+.statistik{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.stat-box{
+  background:#0077ff;
+  color:white;
+
+  width:250px;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.stat-box h1{
+  font-size:50px;
+}
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+/* =========================
+   TENTANG
+========================= */
+
+.tentang p{
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+  line-height:1.8;
+  font-size:18px;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-box{
+  max-width:900px;
+  margin:auto;
+}
+
+.video-box video{
+  width:100%;
+  border-radius:20px;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   GALERI
+========================= */
+
+.galeri-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:20px;
+}
+
+.galeri-container img{
+  width:100%;
+  height:250px;
+
+  object-fit:cover;
+
+  border-radius:20px;
+
+  transition:0.4s;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.galeri-container img:hover{
+  transform:scale(1.05);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card-container{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card{
+  background:white;
+  width:280px;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* =========================
+   FORM BOX
+========================= */
+
+.form-box{
+  max-width:650px;
+
+  margin:auto;
+
+  background:white;
+
+  padding:45px;
+
+  border-radius:30px;
+
+  text-align:center;
+
+  box-shadow:
+  0 10px 35px rgba(0,0,0,0.1);
+}
+
+.form-box p{
+  font-size:20px;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.btn-daftar{
+  display:inline-block;
+
+  background:
+  linear-gradient(
+    45deg,
+    #0077ff,
+    #00c6ff
+  );
+
+  color:white;
+
+  padding:18px 40px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  font-size:20px;
+
+  font-weight:600;
+
+  transition:0.3s;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+input{
+  width:100%;
+  max-width:400px;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  outline:none;
+
+  margin:20px auto;
+
+  display:block;
+
+  font-size:16px;
+
+  box-shadow:0 5px 10px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   KARTU SISWA
+========================= */
+
+.card-siswa{
+  max-width:400px;
+
+  margin:auto;
+
+  background:
+  linear-gradient(
+    to right,
+    #4facfe,
+    #00f2fe
+  );
+
+  color:white;
+
+  padding:40px 20px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card-siswa h3{
+  font-size:30px;
+  margin-bottom:15px;
+}
+
+/* =========================
+   GAME MENU
+========================= */
+
+.game-container{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.game-card{
+  width:250px;
+  padding:35px 20px;
+
+  text-align:center;
+
+  background:white;
+
+  border-radius:25px;
+
+  text-decoration:none;
+
+  color:#333;
+
+  font-size:24px;
+  font-weight:600;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+
+  transition:0.3s;
+}
+
+.game-card:hover{
+  transform:translateY(-10px);
+  background:#0077ff;
+  color:white;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.wa{
+  position:fixed;
+
+  bottom:20px;
+  right:20px;
+
+  background:#25d366;
+  color:white;
+
+  padding:15px 20px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  font-weight:600;
+
+  z-index:999;
+}
+
+/* =========================
+   MUSIC & DARK BUTTON
+========================= */
+
+.music-btn{
+  position:fixed;
+  top:90px;
+  right:20px;
+
+  background:#ff9800;
+  color:white;
+
+  border:none;
+
+  padding:12px 18px;
+
+  border-radius:30px;
+
+  cursor:pointer;
+
+  font-weight:600;
+
+  z-index:999;
+}
+
+.dark-btn{
+  position:fixed;
+  top:150px;
+  right:20px;
+
+  background:#222;
+  color:white;
+
+  border:none;
+
+  padding:12px 18px;
+
+  border-radius:30px;
+
+  cursor:pointer;
+
+  z-index:999;
+}
+
+/* =========================
+   ANIMASI
+========================= */
+
+.fade-in{
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  background:#020617;
+  color:white;
+  text-align:center;
+  padding:30px 20px;
+}
+
+.footer p{
+  margin:10px 0;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode{
+  background:#121212;
+  color:white;
+}
+
+.dark-mode .navbar{
+  background:#1e1e1e;
+}
+
+.dark-mode .menu a{
+  color:white;
+}
+
+.dark-mode .card,
+.dark-mode .stat-box,
+.dark-mode .card-siswa,
+.dark-mode .form-box,
+.dark-mode .game-card,
+.dark-mode input{
+  background:#1e1e1e;
+  color:white;
+}
+
+.dark-mode h2{
+  color:#4facfe;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:12px;
+    padding:15px;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+  }
+
+  .menu a{
+    font-size:14px;
+  }
+
+  .hero{
+    padding:220px 20px 120px;
+  }
+
+  .hero h1{
+    font-size:36px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  h2{
+    font-size:28px;
+  }
+
+  .slider img{
+    height:240px;
+  }
+
+  .card,
+  .game-card{
+    width:100%;
+  }
+
+  .music-btn{
+    top:145px;
+    right:10px;
+    font-size:12px;
+    padding:10px 14px;
+  }
+
+  .dark-btn{
+    top:195px;
+    right:10px;
+    font-size:12px;
+    padding:10px 14px;
+  }
+
+  .creator-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .creator-image img{
+    width:180px;
+    height:180px;
+  }
+
+  .creator-text h3{
+    font-size:30px;
+  }
+
+  .social-media{
+    justify-content:center;
+  }
+
+  .wa{
+    font-size:14px;
+    padding:12px 16px;
+  }
+
+}
